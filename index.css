@@ -1,0 +1,134 @@
+body {
+
+	background-color: #ededed;
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+}
+
+/* Navigation bar */
+.nav-bar {
+
+	background-color: #0A1733;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin: 0px;
+	font-family: Arial;
+}
+
+/* Dropdowns for the nav bar */
+.nav-bar .dropdown{
+
+	display: inline-block;
+	position: relative;
+}
+
+/* Headings for each dropdown */
+.nav-bar .dropdown button, .nav-bar a{
+
+	color: white;
+	font-size: 15px;
+	padding: 12px 22px 12px 22px;
+	outline: none !important;
+	border: none !important;
+	background-color: transparent;
+	cursor: pointer;	
+	font-weight: bold;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.nav-bar .dropdown button:hover, .nav-bar a:hover{
+	
+	background-color: #1A3D88;
+	color: black;
+}
+
+/* Container for content inside the dropdown */
+.nav-bar .dropdown .dropdown-content {
+
+	display: none;
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+	border-style: solid;
+	border-width: 2px;
+	border-top: 0px;
+	width: 200px;
+}
+
+/* Sections in the dropdowns */
+.nav-bar .dropdown .dropdown-content .dc-section {
+
+	width: 200px;
+	margin: 10px 0px 0px 0px;
+	border-width: 0px 0px 1px 0px;
+	border-style: solid;
+	border-color: #AAAAAB;
+	float: left;
+}
+
+/* Titles in each dropdown */
+.nav-bar .dropdown .dropdown-content .dc-section h4 {
+
+	margin: 5px 0px 3px 12px;
+	color: black;
+	display: block;
+	font-size: 16px;
+}
+
+/* Options in each dropdown */
+.nav-bar .dropdown .dropdown-content .dc-section a {
+
+	color: black;
+	margin: 0px;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section a:hover {
+
+	background-color: #111E6C;
+	color: white;
+}
+
+/* Show dropdown when heading is hovered */
+.nav-bar .dropdown:hover .dropdown-content {
+
+	display: block;
+}
+
+/*** Search bar in nav bar ***/
+.nav-bar .search-bar {
+
+	float: right;
+}
+
+.nav-bar .search-bar input[type=text]{
+
+	font-size: 15px;
+	padding: 5px;
+	margin: 7px 0px;
+	border: none !important;
+	outline: none !important;
+}
+
+.nav-bar .search-bar button[type=submit]{
+
+	padding: 5px 2px 5px 2px;
+	margin: 0px 3px 7px -5px;
+	background-color: white; 
+	border-color: #AAAAAB;
+	border-width: 0px 0px 0px 1px;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.nav-bar .search-bar img{
+
+	width: 16px;
+	height: 14px;
+	cursor: pointer;
+}
